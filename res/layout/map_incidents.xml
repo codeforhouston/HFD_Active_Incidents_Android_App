@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    
+    
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/imgFire"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/fire"
+            android:onClick="filterFire" />
+
+        <ImageButton
+            android:id="@+id/imgEMS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ems"
+            android:onClick="filterEms" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+      <com.google.android.maps.MapView
+          android:id="@+id/mapview"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:layout_weight="1"
+          android:apiKey="0KrcXHxnMfJhkn8xA1tn9q-1WckMlJOhgkIC5UQ"
+          android:clickable="true" />
+        
+        </TableRow>
+
+</TableLayout>
+
+
+
